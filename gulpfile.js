@@ -9,7 +9,6 @@ function main_page() {
   return gulp.src('views/index.pug')
     .pipe(pug({
       doctype: 'html',
-      // Your options in here.
     }))
     .pipe(gulp.dest(destination));
 }
@@ -18,7 +17,6 @@ function myths_page() {
   return gulp.src('views/myths.pug')
     .pipe(pug({
       doctype: 'html',
-      // Your options in here.
     }))
     .pipe(gulp.dest(destination));
 }
@@ -28,6 +26,12 @@ function copyFiles() {
     .src(['images/**/*', 'styles/*', 'js/*'])
     .pipe(gulpCopy(destination))
 }
+
+function copyFavicons() {
+  return gulp
+    .src(['favicons/*'])
+    .pipe(gulpCopy(destination, { prefix: 1 }))
+}
  
 
-exports.default = series(main_page, myths_page, copyFiles);
+exports.default = series(main_page, myths_page, copyFiles, copyFavicons);
