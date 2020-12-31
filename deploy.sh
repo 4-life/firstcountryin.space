@@ -9,7 +9,7 @@ if [ $TRAVIS_BRANCH == 'master' ] ; then
   cd dist
 
   git init
-  git remote add origin git@website.com:/var/www/firstcountryin.space
+  git remote add origin git@firstcountryin.space:/var/www/firstcountryin.space
   git config --global user.email "build@travis-ci.org"
   git add .
   git commit -m 'deploy'
