@@ -93,7 +93,7 @@ body.mobile .button_hover{display:none}
 .tl_blocks button{background-color:transparent;display:inline-block;vertical-align:top;padding:2px;margin:1px 6px;border-radius:3px;border:none;cursor:pointer;float:right}
 @media (max-width:960px){.tl_blocks button{float:none}}
 .tl_article_header{word-wrap:break-word}
-.tl_article_header img{display: inline-block; height: 30px;}
+.tl_article_header img{display: inline-block; height: 30px; margin: 0 3px;}
 .tl_article.tl_article_edit .tl_article_header{text-align:left}
 .tl_article .tl_article_header,.tl_article.tl_article_edit .tl_article_content address,.tl_article.tl_article_edit .tl_article_content h1{display:block}
 .tl_article .tl_article_content address,.tl_article .tl_article_content h1,.tl_article_edit .tl_article_header{display:none}
