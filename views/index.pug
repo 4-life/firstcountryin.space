@@ -1,0 +1,48 @@
+- var title = "Инновации в СССР";
+- var description = "Cписок инновационных достижений СССР в случайном порядке, которые почти не появляются в информационном поле. Первый спутник, первый реактор, АК-47 и т.д. описываться тут не будут, так как они достаточно известны.";
+
+doctype html
+<html>
+
+include components/head.pug
+
+<body>
+  <div class="tl_page_wrap">
+    <div class="tl_page">
+      <main class="tl_article">
+        <header class="tl_article_header">
+          <h1 dir="auto">#{title}&nbsp;
+            img(src="images/orders/Order_of_Lenin.png")
+            img(src="images/orders/Order_of_Red_Banner.png")
+            img(src="images/orders/Order_of_Red_Banner_of_Labor.png")
+            img(src="images/orders/Order_of_the_October_Revolution.png")
+          </h1>
+          <address dir="auto">
+            <a rel="author">Октябрь 25, 1917</a>
+            <time datetime="2020-01-01T00:00:00.000Z"></time>
+          </address>
+        </header>
+        <article id="_tl_editor" class="tl_article_content">
+          p=description
+          <figure>
+            img(src="images/center.jpg")
+            <figcaption>Вычислительный центр Госплана СССР</figcaption>
+          </figure>
+
+          br
+          br
+
+          include components/article.pug
+
+          include innovations/rocket1.pug
+          include innovations/semashko.pug
+          include innovations/gas.pug
+        </article>
+      </main>
+    </div>
+  </div>
+
+  script(src="js/footer.js")
+</body>
+
+</html>

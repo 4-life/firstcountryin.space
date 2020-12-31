@@ -1,0 +1,10 @@
+mixin article(link, img, caption)
+  p
+    block
+    |  (
+    a(href=link target="_blank") источник
+    | )
+  if img
+    figure
+      img(src=img)
+      figcaption=caption

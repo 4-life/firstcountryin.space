@@ -1,0 +1,39 @@
+- var title = "Мифы о СССР";
+- var description = "Антисоветская пропаганда создала большое колличество мифов о социализме, которые транслируются по всем каналам передачи информации: телевидение, художественное кино, интернет. Ниже представлен список наиболее одиозных мифов с опровержениями. Цель данных опровержений - не переубедить закоренелых ненавистников коммунистической теории, для которых важно лишь обвинить социалистическое прошлое во всех смертных грехах, а предоставить альетрнативный взгляд тем, кто еще в поиске объективной истины";
+
+doctype html
+<html>
+
+include components/head.pug
+
+<body>
+  <div class="tl_page_wrap">
+    <div class="tl_page">
+      <main class="tl_article">
+        <header class="tl_article_header">
+          <h1 dir="auto">#{title}</h1>
+          <address dir="auto">
+            <a rel="author">Октябрь 25, 1917</a>
+            <time datetime="2020-01-01T00:00:00.000Z"></time>
+          </address>
+        </header>
+        <article id="_tl_editor" class="tl_article_content">
+          p=description
+          <figure>
+            img(src="../images/lenin_v_oktyabre.jpg")
+          </figure>
+
+          include myths/not_effective.pug
+          include myths/golden_mountants.pug
+          include myths/no_difference.pug
+          include myths/farmers_in_prison.pug
+          include myths/no_reforms.pug
+        </article>
+      </main>
+    </div>
+  </div>
+
+  script(src="../js/footer.js")
+</body>
+
+</html>

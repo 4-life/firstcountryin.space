@@ -1,0 +1,18 @@
+{
+  "name": "firstcountryin.space",
+  "version": "1.0.0",
+  "description": "Website firstcountryin.space",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1"
+  },
+  "dependencies": {
+    "gulp-copy": "^4.0.1"
+  }
+}
