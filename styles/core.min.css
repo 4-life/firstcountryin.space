@@ -17,9 +17,9 @@ textarea{resize:none}
 .tl_message_buttons .button+.button{margin-left:12px}
 .tl_article_buttons{position:fixed;left:50%;top:0;right:0;margin:46px 0 0 376px}
 @media (max-width:960px){.tl_article_buttons{position:static;width:auto;margin:30px 21px;padding:1px 0}}
-.tl_article_buttons .button{transition:opacity .4s ease;visibility:hidden;opacity:0}
+.tl_article_buttons .button{transition:opacity .4s ease;opacity:.5}
 .tl_article_buttons .edit_button{position:absolute}
-.tl_article_edit .publish_button,.tl_article_saving .publish_button{visibility:visible;opacity:1}
+.tl_article_buttons .button:hover{opacity:1}
 .tl_article_saving .publish_button{opacity:.4}
 .tl_article .share_button,.tl_article_editable .edit_button{visibility:visible;opacity:1}
 .tl_article_edit .edit_button,.tl_article_edit .share_button,.tl_article_saving .edit_button,.tl_article_saving .share_button{visibility:hidden;opacity:0}
