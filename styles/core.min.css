@@ -9,7 +9,7 @@ body,html{padding:0;margin:0}
 textarea{resize:none}
 .tl_page_wrap{max-width:732px;margin:0 auto}
 .tl_page{position:relative;padding:21px 0}
-.button{font-family:CustomSansSerif,'Lucida Grande',Arial,sans-serif;font-weight:600;font-style:normal;font-size:17px;color:#000;text-decoration:none;border:2px solid #333;border-radius:16px;text-transform:uppercase;padding:4px 12px;margin:0 0 15px;background-color:#fff;cursor:pointer}
+.button{font-family:CustomSansSerif,'Lucida Grande',Arial,sans-serif;font-weight:600;font-style:normal;font-size:17px;color:#000;text-decoration:none;border-bottom:2px solid #333;text-transform:uppercase;padding:4px 12px;margin:0 0 15px;background-color:#fff;cursor:pointer}
 .tl_message{font-family:CustomSansSerif,'Lucida Grande',Arial,sans-serif;padding:70px 0;color:#79828B;text-align:center}
 .tl_message h1{font-size:120px;margin:0}
 .tl_message_buttons{padding:70px 0}
