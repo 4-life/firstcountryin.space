@@ -10,7 +10,7 @@ if [ $TRAVIS_BRANCH == 'master' ] ; then
 
   git init
   git remote add origin travis2@firstcountryin.space:/home/travis2/firstcountryin.space
-  git config --global user.email "build@travis-ci.org"
+  git config --global user.email "build@travis-ci.com"
   git add .
   git commit -m 'deploy'
   git push --force origin master
