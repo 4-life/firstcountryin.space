@@ -16,9 +16,6 @@ jobs:
       - name: Build the app
         run: npm start
 
-      - name: Checkout
-        uses: actions/checkout@v1
-
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
