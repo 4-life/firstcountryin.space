@@ -4,7 +4,8 @@
   "description": "Website firstcountryin.space",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "build": "git commit -m \"$npm_package_version\""
   },
   "author": "",
   "license": "ISC",
