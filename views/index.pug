@@ -24,6 +24,7 @@ include components/head.pug
         </header>
         <article id="_tl_editor" class="tl_article_content">
           <div class="tl_article_buttons">
+            <a href="./" class="button disabled">Инновации в СССР</a>
             <a href="./myths.html" class="button">Мифы об СССР</a>
           </div>
           p=description
@@ -37,6 +38,7 @@ include components/head.pug
 
           include components/article.pug
 
+          include innovations/vacuum-dugovoe.pug
           include innovations/korvet.pug
           include innovations/micro.pug
           include innovations/heart.pug

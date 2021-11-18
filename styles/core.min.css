@@ -9,7 +9,7 @@ body,html{padding:0;margin:0}
 textarea{resize:none}
 .tl_page_wrap{max-width:732px;margin:0 auto}
 .tl_page{position:relative;padding:21px 0}
-.button{font-family:CustomSansSerif,'Lucida Grande',Arial,sans-serif;font-weight:600;font-style:normal;font-size:17px;color:#000;text-decoration:none;border-bottom:2px solid #333;text-transform:uppercase;padding:4px 12px;margin:0 0 15px;background-color:#fff;cursor:pointer}
+.button{font-family:CustomSansSerif,'Lucida Grande',Arial,sans-serif;font-weight:600;font-style:normal;font-size:17px;color:#000;text-decoration:none;border-bottom:2px solid #333;text-transform:uppercase;padding:4px 12px;margin:0 0 15px;background-color:#fff;cursor:pointer;}
 .tl_message{font-family:CustomSansSerif,'Lucida Grande',Arial,sans-serif;padding:70px 0;color:#79828B;text-align:center}
 .tl_message h1{font-size:120px;margin:0}
 .tl_message_buttons{padding:70px 0}
@@ -17,7 +17,8 @@ textarea{resize:none}
 .tl_message_buttons .button+.button{margin-left:12px}
 .tl_article_buttons{position:fixed;left:50%;top:0;right:0;margin:46px 0 0 376px}
 @media (max-width:960px){.tl_article_buttons{position:static;width:auto;margin:30px 21px;padding:1px 0}}
-.tl_article_buttons .button{transition:opacity .4s ease;opacity:.5}
+.tl_article_buttons .button{transition:opacity .4s ease;opacity:.6;padding: 0 10px 0 0;display: block;}
+.tl_article_buttons .button.disabled{cursor:default;opacity:.4;pointer-events: none;}
 .tl_article_buttons .edit_button{position:absolute}
 .tl_article_buttons .button:hover{opacity:1}
 .tl_article_saving .publish_button{opacity:.4}
