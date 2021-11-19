@@ -146,6 +146,12 @@ body.mobile .button_hover{display:none}
 .tl_article .tl_article_content .iframe_wrap{max-width:100%;vertical-align:top;position:relative}
 .tl_article .tl_article_content .iframe_wrap iframe{position:absolute;width:1px;height:1px;min-width:100%;min-height:100%;top:0;left:0}
 .tl_article .tl_article_content figure{margin:0 21px 16px;padding:0;text-align:center;position:relative}
+.tl_article .tl_article_content .article{transition: all .5s ease;max-height: 90px;overflow: hidden;margin-bottom: 10px;position: relative;}
+.tl_article .tl_article_content .article.big{max-height: 160px;}
+.tl_article .tl_article_content .article.open{max-height: 9999px;}
+.tl_article .tl_article_content .article .more{transition: all .5s ease;position: absolute;bottom: 0;width: 100%;background: rgb(255,255,255,.7);background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);border: none;font-size: 40px;color: rgb(56 56 56 / 50%);cursor: pointer;height: 60px;opacity: .9}
+.tl_article .tl_article_content .article .more:hover{opacity: 1;color: #000;background: rgb(255,255,255,.8);background: linear-gradient(0deg, rgba(255,255,255,1) 20%, rgba(255,255,255,0) 100%);}
+.tl_article .tl_article_content .article.open .more{display: none;}
 .tl_article .tl_article_content figcaption,.tl_article .tl_article_content figcaption .editable_input{font-family:CustomSansSerif,'Lucida Grande',Arial,sans-serif;font-size:15px;color:#79828B;padding:12px 21px 0;line-height:18px;vertical-align:top;text-align:center}
 .tl_article .tl_article_content figcaption .editable_input{width:100%;border:none;padding:0;margin:0}
 .tl_article .tl_article_content .figure_wrapper{position:relative}

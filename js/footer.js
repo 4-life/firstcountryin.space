@@ -1,4 +1,6 @@
-document.querySelector('time').innerText = `Ноябрь 07, ${new Date().getFullYear()}`;
+const elements = Array.from(document.querySelectorAll('button.more'));
+const open = (el) => el.target.parentElement.classList.add('open');
+elements.forEach(el => el.addEventListener('click', open.bind(el)));
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
