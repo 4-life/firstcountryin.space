@@ -1,4 +1,4 @@
-mixin article(link, img, caption)
+mixin article(link, img, caption, small_img)
   .article
     p
       block
@@ -7,7 +7,7 @@ mixin article(link, img, caption)
       | )
     if img
       figure
-        img(src=img)
+        div.img(style=`background-image: url(${img});height:${small_img ? '280' : '450'}px`)
         figcaption=caption
     hr
     button.more ⌄
