@@ -1,5 +1,9 @@
 const elements = Array.from(document.querySelectorAll('button.more'));
-const open = (el) => el.target.parentElement.classList.add('open');
+const open = (el) => {
+  el.target.parentElement.classList.add('open');
+  const img = el.target.parentElement.querySelector('img');
+  img.src = img.dataset.src;
+};
 
 function checkAnchor() {
   const hash = window.location.hash.split('#')[1];

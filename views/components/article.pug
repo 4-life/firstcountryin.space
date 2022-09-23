@@ -7,7 +7,7 @@ mixin article(link, img, caption, small_img)
       | )
     if img
       figure
-        div.img(style=`background-image: url(${img});height:${small_img ? '280' : '450'}px`)
+        img(data-src=img)
         figcaption=caption
     hr
     button.more ⌄
