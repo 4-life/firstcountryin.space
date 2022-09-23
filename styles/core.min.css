@@ -148,6 +148,7 @@ body.mobile .button_hover{display:none}
 .tl_article .tl_article_content .iframe_wrap{max-width:100%;vertical-align:top;position:relative}
 .tl_article .tl_article_content .iframe_wrap iframe{position:absolute;width:1px;height:1px;min-width:100%;min-height:100%;top:0;left:0}
 .tl_article .tl_article_content figure{margin:0 21px 16px;padding:0;text-align:center;position:relative}
+.tl_article .tl_article_content figure .img{min-height: 200px;background-color: #ebebeb;display: flex;align-items: center;justify-content: center;}
 .tl_article .tl_article_content .article{transition: all .5s ease;max-height: 80px;overflow: hidden;margin-bottom: 10px;position: relative;}
 .tl_article .tl_article_content .article.big{max-height: 160px;}
 .tl_article .tl_article_content .article.open{max-height: 9999px;}
