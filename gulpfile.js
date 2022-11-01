@@ -1,15 +1,17 @@
 const gulp = require('gulp');
 const pug = require('gulp-pug');
+const rename = require('gulp-rename');
 const { series } = require('gulp');
 const gulpCopy = require('gulp-copy');
 
 const destination = './dist/';
 
 function main_page() {
-  return gulp.src('views/index.pug')
+  return gulp.src('views/innovations.pug')
     .pipe(pug({
       doctype: 'html',
     }))
+    .pipe(rename('index.html'))
     .pipe(gulp.dest(destination));
 }
 
@@ -18,7 +20,17 @@ function myths_page() {
     .pipe(pug({
       doctype: 'html',
     }))
-    .pipe(gulp.dest(destination));
+    .pipe(rename('index.html'))
+    .pipe(gulp.dest(`${destination}/myths`));
+}
+
+function ideology_page() {
+  return gulp.src('views/ideology.pug')
+    .pipe(pug({
+      doctype: 'html',
+    }))
+    .pipe(rename('index.html'))
+    .pipe(gulp.dest(`${destination}/ideology`));
 }
 
 function copyFiles() {
@@ -34,4 +46,4 @@ function copyFavicons() {
 }
  
 
-exports.default = series(main_page, myths_page, copyFiles, copyFavicons);
+exports.default = series(main_page, myths_page, ideology_page, copyFiles, copyFavicons);
