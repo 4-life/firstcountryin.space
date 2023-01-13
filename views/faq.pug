@@ -1,0 +1,49 @@
+- var title = "FAQ по СССР";
+- var description = "Данный список содержит короткие «Вопросы и ответы» на тему социализма и СССР. Ответы даны в свободной форме с ссылками на Википедию (там, где это возможно).";
+
+doctype html
+<html>
+
+  include components/head.pug
+
+  +head()
+
+  <body>
+    <div class="tl_page_wrap">
+      <div class="tl_page">
+        <main class="tl_article">
+          <header class="tl_article_header">
+            <h1 dir="auto">#{title}</h1>
+            <address dir="auto">
+              <a rel="author">Октябрь 25, 1917</a>
+              <time datetime="2023-01-01T00:00:00.000Z"></time>
+            </address>
+          </header>
+          <article id="_tl_editor" class="tl_article_content">
+            <div class="tl_article_buttons">
+              <a href="/" class="button">Инновации в СССР</a>
+              <a href="./myths/" class="button">Мифы об СССР</a>
+              <a href="./ideology/" class="button disabled">FAQ по СССР</a>
+            </div>
+            p=description
+            <figure>
+              img(src="../images/univermag.webp")
+              <figcaption>Универмаг самообслуживания «Заневский». Открыт в Ленинграде в 1966 году</figcaption>
+            </figure>
+
+            hr
+            br
+
+            include faq/parasitism.pug
+          </article>
+        </main>
+      </div>
+
+      include components/footer.pug
+    </div>
+
+    script(async, src="https://www.googletagmanager.com/gtag/js?id=G-2B0JZYV657")
+    script(src="../js/footer.js")
+  </body>
+
+</html>

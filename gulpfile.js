@@ -24,13 +24,13 @@ function myths_page() {
     .pipe(gulp.dest(`${destination}/myths`));
 }
 
-function ideology_page() {
-  return gulp.src('views/ideology.pug')
+function faq_page() {
+  return gulp.src('views/faq.pug')
     .pipe(pug({
       doctype: 'html',
     }))
     .pipe(rename('index.html'))
-    .pipe(gulp.dest(`${destination}/ideology`));
+    .pipe(gulp.dest(`${destination}/faq`));
 }
 
 function copyFiles() {
@@ -46,4 +46,4 @@ function copyFavicons() {
 }
  
 
-exports.default = series(main_page, myths_page, ideology_page, copyFiles, copyFavicons);
+exports.default = series(main_page, myths_page, faq_page, copyFiles, copyFavicons);
