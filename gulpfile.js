@@ -41,7 +41,7 @@ function copyFiles() {
 
 function copyFavicons() {
   return gulp
-    .src(['favicons/*'])
+    .src(['favicons/**/*'])
     .pipe(gulpCopy(destination, { prefix: 1 }))
 }
  

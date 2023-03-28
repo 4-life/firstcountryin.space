@@ -6,7 +6,7 @@ doctype html
 
   include components/head.pug
 
-  +head(true)
+  +head(true, 'https://firstcountryin.space/images/orders/kachestvo.png')
 
   <body>
     <div class="tl_page_wrap">
@@ -14,20 +14,27 @@ doctype html
         <main class="tl_article">
           <header class="tl_article_header">
             <h1 dir="auto">#{title}&nbsp;
-              img(src="images/orders/Order_of_Lenin.webp")
-              img(src="images/orders/Order_of_Red_Banner.webp")
-              img(src="images/orders/Order_of_Red_Banner_of_Labor.webp")
-              img(src="images/orders/Order_of_the_October_Revolution.webp")
+              img(src="images/orders/kachestvo.webp")
             </h1>
             <address dir="auto">
               <a rel="author">Октябрь 25, 1917</a>
-              <time datetime="1991-12-26">Декабрь 26, 1991</time>
+              <time datetime="2023-01-01T00:00:00.000Z">Декабрь 26, 1991</time>
             </address>
           </header>
           <article id="_tl_editor" class="tl_article_content">
             <div class="tl_article_buttons">
-              <a href="/" class="button disabled">Инновации в СССР</a>
-              <a href="./myths/" class="button">Мифы об СССР</a>
+              <a href="/" class="button disabled">
+                span Инновации в СССР
+                img(src="images/orders/kachestvo.webp")
+              </a>
+              <a href="./myths/" class="button">
+                span Мифы об СССР
+                img(src="images/orders/Order_of_Lenin.webp")
+              </a>
+              <a href="./faq/" class="button">
+                span FAQ по СССР
+                img(src="images/orders/Order_of_Red_Banner_of_Labor.webp")
+              </a>
             </div>
             p=description
             <figure>
@@ -103,6 +110,7 @@ doctype html
       </div>
 
       include components/footer.pug
+      +footer("images/orders/kachestvo.webp")
     </div>
 
     script(async, src="https://www.googletagmanager.com/gtag/js?id=G-2B0JZYV657")

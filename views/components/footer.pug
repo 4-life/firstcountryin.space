@@ -1,7 +1,25 @@
-<footer>
-  p #{title}. Лицензия <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">CC BY-SA 4.0</a>. 2023
-  p
-    <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">
-      <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/>
-    </a>
-</footer>
+mixin footer(logo)
+  footer
+    div.footer
+      div.title
+        p.footer-title
+          img(src=logo)
+          span #{title}
+            br
+            span 2023
+
+      div.social
+        p
+          <a rel="ton" class="social-img" href="https://ton.place/lenin" target="_blank" rel="noopener noreferrer" title="Мы в Ton">
+            <img alt="ton logo" src="../images/orders/ton.png"/>
+          </a>
+          //- &nbsp;&nbsp;<a rel="twitter" class="social-img" href="https://twitter.com/firstcountryinspace" target="_blank" rel="noopener noreferrer" title="Мы в Twitter">
+          //- <img alt="twitter logo" src="../images/orders/twitter.png"/>
+        </a>
+
+    hr
+
+    p.license-text Лицензия <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">CC BY-SA 4.0</a>
+      <a rel="license" class="license-img" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">
+        <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/>
+      </a>

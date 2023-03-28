@@ -1,4 +1,4 @@
-mixin head(mainPage)
+mixin head(mainPage, logo)
   head
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     title=title
@@ -12,25 +12,24 @@ mixin head(mainPage)
     <meta property="og:type" content="article">
     meta(property="og:title" content=title)
     meta(property="og:description" content=description)
-    <meta property="og:image" content="https://firstcountryin.space/images/orders/Order_of_Lenin.png"/>
-    <meta property="og:image:url" content="https://firstcountryin.space/images/orders/Order_of_Lenin.png"/>
-    <meta property="article:published_time" content="2020-01-01T00:00:00.000Z">
-    <meta property="article:modified_time" content="2022-01-01T00:00:00.000Z">
-    <meta property="article:author" content="December 14, 2016">
-    <meta name="twitter:card" content="summary">
+    meta(property="og:site_name" content=title)
+    <meta property="og:locale" content="ru_RU" />
+    meta(property="og:image" content=logo)
+    meta(property="og:image:url" content=logo)
+    meta(property="og:image:secure_url" content=logo)
+    <meta property="article:published_time" content="2023-01-01T00:00:00.000Z">
+    <meta property="article:modified_time" content="2023-03-01T00:00:00.000Z">
+    <meta name="twitter:card" content=description>
     meta(property="twitter:title" content=title)
     meta(property="twitter:description" content=description)
+    link(rel="shortcut icon" href="favicon.ico?1" type="image/x-icon")
+    link(rel="icon" type="image/png" href="favicon.png?1" sizes="16x16")
+    link(rel="icon" type="image/png" href="favicon_2x.png?1" sizes="32x32")
 
     if mainPage
-      link(rel="shortcut icon" href="favicon.ico?1" type="image/x-icon")
-      link(rel="icon" type="image/png" href="favicon.png?1" sizes="16x16")
-      link(rel="icon" type="image/png" href="favicon_2x.png?1" sizes="32x32")
       link(rel='stylesheet', href='./styles/quill.core.min.css')
       link(rel='stylesheet', href='./styles/core.min.css')
     else
-      link(rel="shortcut icon" href="../favicon.ico?1" type="image/x-icon")
-      link(rel="icon" type="image/png" href="../favicon.png?1" sizes="16x16")
-      link(rel="icon" type="image/png" href="../favicon_2x.png?1" sizes="32x32")
       link(rel='stylesheet', href='../styles/quill.core.min.css')
       link(rel='stylesheet', href='../styles/core.min.css')
 
