@@ -2,9 +2,10 @@ mixin article(link, img, caption, small_img)
   .article
     p
       block
-      |  (
-      a(href=link target="_blank") источник
-      | )
+      if link
+        |  (
+        a(href=link target="_blank") источник
+        | )
     if img
       figure
         div.img
