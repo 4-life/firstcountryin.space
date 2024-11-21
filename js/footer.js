@@ -16,13 +16,13 @@ function checkAnchor() {
 
   const anchor = document.getElementById(hash);
   if (anchor) {
-    anchor.parentElement.classList.add('open');
+    open({ target: anchor });
   }
 }
 
 // google analytics
 window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
+function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 gtag('config', 'G-2B0JZYV657');
 
